@@ -7,6 +7,7 @@
 </head>
 <body>
         <h1 style="text-align:center">Variable byte encoding and front coding</h1>
+        <hr>
         <p>When we store documents as while indexing a set of documents using an inverted index approach we need to
             store the dictionary and postings. </p>
         <p>The naive approach to store them may lead to large size of the index files when many documents are present in
@@ -20,6 +21,7 @@
         as they were aware the size of documents would rise exponentially as the time passes. Some decided they would
             focus on compressing on dictionaries and the rest decided to focus on compressing postings.</p>
 
+        
         <h3>Benefits of compression:</h3>
         <ul>
             <li>We can store more information in cache memory as the size of information is reduced during compression
@@ -29,7 +31,7 @@
                 decompressing it is usually less than transferring the same chunk of data in uncompressed form.</li>
         </ul>
         <b>We will explain Front coding a way to compress a dictionary and variable byte encoding a way to compress postings.</b>
-        <h2>Front Coding</h2>
+        <h2>&bullet; Front Coding</h2>
         <p>In front-coding with block lengths of size ‘k’, we take ‘k’ terms in succession and front code the common prefix
             to each of those terms. Consider the following example with a block size of 4:</p>
             <b>credibility credit crediting creditor </b></br>
@@ -58,7 +60,7 @@
             <p>Front Coded String - {{ fci_message }}</p>
         {% endif %}
 
-        <h2>Variable Byte Encoding</h2>
+        <h2>&bull; Variable Byte Encoding</h2>
         <p>
             Variable byte (VB) encoding uses an integral number of bytes to encode a gap.
             The last 7 bits of a byte are “payload” and encode part of the gap.
@@ -68,8 +70,8 @@
             We then extract and concatenate the 7-bit parts.</br>
 
         </p>
-        <p style="text-align:center;">
-            <img src="{{url_for('static', filename='VBE.png')}}" alt="VBE example" style="width:1024px;height:512px;">
+        <p>
+            <img src="{{url_for('static', filename='VBE.png')}}" alt="VBE example" style="width:680px;height:380px;">
         </p>
         <p>
             The 7-bit variable byte encoding of a given postings list can be generate below  - <br> <br>
@@ -85,7 +87,9 @@
             <p>Variable byte encoded string - {{ vbe_message }}</p>
         {% endif %}
         <br>
-        <br>
+         <footer>
+             <p style="text-align:right">Submitted by - Ashish Kumar Sinha, Salman Baqri, Shailender Joseph and Tanmey Rawal</p>
+            </footer>
 
 </body>
 </html>

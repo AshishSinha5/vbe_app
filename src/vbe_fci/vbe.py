@@ -24,6 +24,7 @@ def vbe_util(l):
             final_bin_list.append('{0:08b}'.format(j))
         final_bin_list[-1] = '1' + final_bin_list[-1][1:]
     # final_bin_list = list(map(int, final_bin_list))
+    final_bin_list = " ".join(str(x) for x in final_bin_list)
     # print(final_bin_list)
     return final_bin_list
 

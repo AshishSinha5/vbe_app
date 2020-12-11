@@ -24,9 +24,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b53aba3d-0c17-4f6f-b0b5-a90534728c5e" name="Default Changelist" comment="Updated index file">
+    <list default="true" id="b53aba3d-0c17-4f6f-b0b5-a90534728c5e" name="Default Changelist" comment="updated main.py added open_browser function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vbe_fci/vbe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/vbe_fci/vbe.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607362439340</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated main.py added open_browser function">
+      <created>1607412399966</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607412399966</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,29 +279,30 @@
     <MESSAGE value="Added content to index file" />
     <MESSAGE value="Added static files" />
     <MESSAGE value="Updated index file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated index file" />
+    <MESSAGE value="updated main.py added open_browser function" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated main.py added open_browser function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="518" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607226385141">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="518" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1607226385141" />
-    <state width="1515" height="174" key="GridCell.Tab.0.bottom" timestamp="1607367143662">
+    <state width="1515" height="174" key="GridCell.Tab.0.bottom" timestamp="1607691552677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607367143662" />
-    <state width="1515" height="174" key="GridCell.Tab.0.center" timestamp="1607367143661">
+    <state width="1515" height="174" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1607691552677" />
+    <state width="1515" height="174" key="GridCell.Tab.0.center" timestamp="1607691552677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607367143661" />
-    <state width="1515" height="174" key="GridCell.Tab.0.left" timestamp="1607367143661">
+    <state width="1515" height="174" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1607691552677" />
+    <state width="1515" height="174" key="GridCell.Tab.0.left" timestamp="1607691552677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607367143661" />
-    <state width="1515" height="174" key="GridCell.Tab.0.right" timestamp="1607367143661">
+    <state width="1515" height="174" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1607691552677" />
+    <state width="1515" height="174" key="GridCell.Tab.0.right" timestamp="1607691552677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607367143661" />
+    <state width="1515" height="174" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1607691552677" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1607234065441">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -309,10 +319,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1607234065441" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607362441343">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1607412436138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607362441343" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1607412436138" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607361172541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -5,6 +5,7 @@ from threading import Timer
 from flask import Flask, render_template, request, url_for
 
 sys.path.append('../')
+
 from src.vbe_fci.fci import fci_util
 from src.vbe_fci.vbe import vbe_util
 
@@ -41,7 +42,8 @@ def result():
 def open_browser():
     webbrowser.open_new('http://127.0.0.1:5000/')
 
+
 if __name__ == '__main__':
     # print(os.path.dirname(os.path.realpath(__file__)))
     Timer(1, open_browser).start();
-    app.run(port=5000)
+    app.run(port=5000, debug=True)
