@@ -19,7 +19,9 @@
             then imagine the storage space required </p>
         <p>In order to tackle this problem researchers decided they needed to do something about the storage space required
         as they were aware the size of documents would rise exponentially as the time passes. Some decided they would
-            focus on compressing on dictionaries and the rest decided to focus on compressing postings.</p>
+            focus on compressing on dictionaries and the rest decided to focus on compressing postings. <br> <br>
+        The source code for the web page can be found at <a href="https://github.com/AshishSinha5/vbe_app">https://github.com/AshishSinha5/vbe_app</a>
+        </p>
 
         
         <h3>Benefits of compression:</h3>
@@ -81,15 +83,13 @@
             <input type = "text"  name = "string_vbe" required>
             <input type = "submit" value="submit_vbe_string" name = "submit" ><br>
         </form>
-
         {% if vbe_message %}
             <p>Original postings list - {{ vbe_text }}</p>
             <p>Variable byte encoded string - {{ vbe_message }}</p>
         {% endif %}
-        <br>
-         <footer>
-             <p style="text-align:right">Submitted by - Ashish Kumar Sinha, Salman Baqri, Shailender Joseph and Tanmey Rawal</p>
-            </footer>
+        <footer style="text-align:right">
+             Submitted by - Ashish Kumar Sinha, Salman Baqri, Shailender Joseph and Tanmey Rawal
+</footer>
 
 </body>
 </html>
